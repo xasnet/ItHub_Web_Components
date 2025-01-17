@@ -1,0 +1,33 @@
+body {
+    padding: 20px;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Arial", "Georgia", serif;
+}
+
+#snackbar {
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0);
+    background-color: #323232;
+    padding: 15px 25px;
+    color: #fff;
+    width: 250px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s;
+}
+
+#snackbar.show {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 0.25s;
+}
+
+#snackbar .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
